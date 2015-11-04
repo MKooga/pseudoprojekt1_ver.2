@@ -36,17 +36,11 @@
     }
 </script>
 <script>
-
-    function Asenda() {
-        if (document.getElementById("cat").src == "https://www.petfinder.com/wp-content/uploads/2012/11/140272627-grooming-needs-senior-cat-632x475.jpg")
-        {
-            document.getElementById("cat").src = 'http://bedandbiscuitspetretreat.co.uk/Dog.jpg';
+    $('#cat').on({
+        'click': function(){
+            $('#cat').attr('src','http://bedandbiscuitspetretreat.co.uk/Dog.jpg');
         }
-        else
-        {
-        }
-    }
-
+    });
 </script>
 
 </body>
