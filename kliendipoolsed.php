@@ -48,16 +48,16 @@
 
     $(document).ready(function() {
         $("#red").click(function() {
-
-            $("body").css("background-color","red");
+            $color=$(this).html();
+            $("body").css("background-color",$color);
         });
         $("#green").click(function() {
-
-            $("body").css("background-color","green");
+            $color=$(this).html();
+            $("body").css("background-color",$color);
         });
         $("#blue").click(function() {
-
-            $("body").css("background-color","blue");
+            $color=$(this).html();
+            $("body").css("background-color",$color);
         });
     });
 </script>
