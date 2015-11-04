@@ -2,6 +2,7 @@
 
 $eesnimi="Martin";
 $perenimi="Kooga";
+$vanus=23;
 
-echo $eesnimi." ".$perenimi."<br>";
+echo $eesnimi." ".$perenimi." (".$vanus.")<br>";
 ?>
