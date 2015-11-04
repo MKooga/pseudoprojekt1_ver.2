@@ -9,6 +9,8 @@
 
 <button onclick="myFunction()">Tere maailm.</button>
 
+<button id="parem">Luba parem klõps</button>
+
 <a href="javascript:linkKHK();">tere maailm</a>
 
 <a href="javascript:linkEi();">jääme siia</a>
@@ -65,6 +67,19 @@
         $(document).bind("contextmenu",function(e){
 
             return false;
+        });
+    });
+
+    $(document).ready(function(){
+        $("#parem").bind("click", function(){
+
+            $(document).ready(function(){
+                $(document).unbind("contextmenu");
+                // OR
+                $(document).bind("contextmenu",function(e){
+                    return true;
+                });
+            });
         });
     });
 </script>
