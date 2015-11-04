@@ -11,6 +11,7 @@
 
 <a href="javascript:linkKHK();">tere maailm</a>
 
+<a href="javascript:linkEi();">jääme siia</a>
 
 <script>
     function myFunction() {
@@ -22,6 +23,15 @@
     function linkKHK() {
         alert("Tere maailm!");
         window.location="http://www.khk.ee";
+    }
+</script>
+
+<script>
+    function linkEi() {
+        alert("jääme siia");
+        event.preventDefault()
+        window.location="http://www.khk.ee";
+
     }
 </script>
 
