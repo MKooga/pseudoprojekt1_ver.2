@@ -15,6 +15,10 @@
 
 <img onclick="Asenda()" src="https://www.petfinder.com/wp-content/uploads/2012/11/140272627-grooming-needs-senior-cat-632x475.jpg" id="cat"/>
 
+<button id="red">red</button>
+<button id="green">green</button>
+<button id="blue">blue</button>
+
 <script>
     function myFunction() {
         alert("Tere maailm!");
@@ -40,6 +44,21 @@
         'click': function(){
             $('#cat').attr('src','http://bedandbiscuitspetretreat.co.uk/Dog.jpg');
         }
+    });
+
+    $(document).ready(function() {
+        $("#red").click(function() {
+
+            $("body").css("background-color","red");
+        });
+        $("#green").click(function() {
+
+            $("body").css("background-color","green");
+        });
+        $("#blue").click(function() {
+
+            $("body").css("background-color","blue");
+        });
     });
 </script>
 
