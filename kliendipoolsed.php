@@ -9,9 +9,19 @@
 
 <button onclick="myFunction()">Tere maailm.</button>
 
+<a href="javascript:linkKHK();">tere maailm</a>
+
+
 <script>
     function myFunction() {
         alert("Tere maailm!");
+    }
+</script>
+
+<script>
+    function linkKHK() {
+        alert("Tere maailm!");
+        window.location="http://www.khk.ee";
     }
 </script>
 
