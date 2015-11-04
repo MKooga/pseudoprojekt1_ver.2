@@ -60,6 +60,13 @@
             $("body").css("background-color",$color);
         });
     });
+
+    $(document).ready(function() {
+        $(document).bind("contextmenu",function(e){
+
+            return false;
+        });
+    });
 </script>
 
 </body>
