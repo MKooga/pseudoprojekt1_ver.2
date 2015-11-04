@@ -11,6 +11,8 @@
 
 <button id="parem">Luba parem klõps</button>
 
+<button id="toggle">Näita/peida pilti</button>
+
 <a href="javascript:linkKHK();">tere maailm</a>
 
 <a href="javascript:linkEi();">jääme siia</a>
@@ -80,6 +82,12 @@
                     return true;
                 });
             });
+        });
+    });
+
+    $(document).ready(function(){
+        $("#toggle").click(function(){
+            $("img").toggle();
         });
     });
 </script>
