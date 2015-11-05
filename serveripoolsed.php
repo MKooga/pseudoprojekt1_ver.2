@@ -1,3 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+<form action="?" method="post">
+    Kass: <input name="kass"><br>
+    <input type="submit">
+</form>
+
+
+</body>
+</html>
+
 <?php
 
 class pseudo{}
@@ -30,4 +47,8 @@ if(eesnimi_algab_vokaaliga($isik)){
 echo $num1+$num2." ";
 echo "<br>";
 echo htmlspecialchars($_GET["koer"]);
+if($_POST["kass"]){
+    echo "Kass oli ".$_POST["kass"];
+}
+
 ?>
