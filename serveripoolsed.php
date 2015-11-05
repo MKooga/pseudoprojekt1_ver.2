@@ -28,4 +28,6 @@ if(eesnimi_algab_vokaaliga($isik)){
     echo "Eesnimi algab vokaaliga."."<br>";
 }
 echo $num1+$num2." ";
+echo "<br>";
+echo htmlspecialchars($_GET["koer"]);
 ?>
