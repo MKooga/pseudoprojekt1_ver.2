@@ -7,7 +7,8 @@ $isik->eesnimi="Martin";
 $isik->perenimi="Kooga";
 $isik->vanus=23;
 $isik->sugu="mees";
-
+$num1 = 1.23;
+$num2 = 2.34;
 
 function eesnimi_algab_vokaaliga($tüüp){
 
@@ -26,4 +27,5 @@ echo "<br>";
 if(eesnimi_algab_vokaaliga($isik)){
     echo "Eesnimi algab vokaaliga."."<br>";
 }
+echo $num1+$num2." ";
 ?>
