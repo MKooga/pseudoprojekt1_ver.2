@@ -1,54 +1,26 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-</head>
-<body>
-
-<form action="?" method="post">
-    Kass: <input name="kass"><br>
-    <input type="submit">
-</form>
-
-
-</body>
-</html>
-
 <?php
 
-class pseudo{}
+class pseudo{
+var $eesnimi;
+var $perenimi;
+var $vanus;
+}
 
-$isik=new pseudo();
+$isik=new pseudo(
+
+);
 $isik->eesnimi="Martin";
 $isik->perenimi="Kooga";
 $isik->vanus=23;
 $isik->sugu="mees";
-$num1 = 1.23;
-$num2 = 2.34;
 
-function eesnimi_algab_vokaaliga($tüüp){
 
-    $vowels = array('A', 'E', 'I', 'O', 'U', 'Õ', 'Ä', 'Ö', 'Ü');
-    $eesnime_array=str_split((string)$tüüp->eesnimi);
+$eesnimi_algab_vokaaliga=false;
 
-    if(in_array($eesnime_array[0],$vowels)){
-        return true;
-    }
-
-}
-
-print_r($isik);
+echo $isik->eesnimi." ".$isik->perenimi." (".$isik->vanus.")";
 echo "<br>";
 
-if(eesnimi_algab_vokaaliga($isik)){
+if($eesnimi_algab_vokaaliga){
     echo "Eesnimi algab vokaaliga."."<br>";
 }
-echo $num1+$num2." ";
-echo "<br>";
-echo htmlspecialchars($_GET["koer"]);
-if($_POST["kass"]){
-    echo "Kass oli ".$_POST["kass"];
-}
-
 ?>
