@@ -16,7 +16,7 @@ $isik->vanus=23;
 $isik->sugu="mees";
 
 
-$eesnimi_algab_vokaaliga=false;
+
 
 function eesnimi_algab_vokaaliga($tüüp){
 
@@ -33,7 +33,7 @@ function eesnimi_algab_vokaaliga($tüüp){
 echo $isik->eesnimi." ".$isik->perenimi." (".$isik->vanus.")";
 echo "<br>";
 
-if($eesnimi_algab_vokaaliga){
+if(eesnimi_algab_vokaaliga($isik)){
     echo "Eesnimi algab vokaaliga."."<br>";
 }
 ?>
