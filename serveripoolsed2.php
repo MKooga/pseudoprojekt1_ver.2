@@ -18,10 +18,10 @@ $isik->sugu="mees";
 
 $eesnimi_algab_vokaaliga=false;
 
-function eesnimi_algab_vokaaliga($tüüp){
+function eesnimi_algab_vokaaliga($tÃ¼Ã¼p){
 
-    $vowels = array('A', 'E', 'I', 'O', 'U', 'Õ', 'Ä', 'Ö', 'Ü', 'a', 'e', 'i', 'o', 'u', 'õ', 'ä', 'ö', 'ü');
-    $eesnime_array=str_split((string)$tüüp->eesnimi);
+    $vowels = array('A', 'E', 'I', 'O', 'U', 'Ã•', 'Ã„', 'Ã–', 'Ãœ', 'a', 'e', 'i', 'o', 'u', 'Ãµ', 'Ã¤', 'Ã¶', 'Ã¼');
+    $eesnime_array=str_split((string)$tÃ¼Ã¼p->eesnimi);
 
     if(in_array($eesnime_array[0],$vowels)){
         return true;
