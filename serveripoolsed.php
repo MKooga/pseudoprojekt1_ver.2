@@ -1,6 +1,10 @@
 <?php
 
-class pseudo{}
+class pseudo{
+    var $eesnimi;
+    var $perenimi;
+    var $vanus;
+}
 
 $isik=new pseudo();
 $isik->eesnimi="Martin";
@@ -9,10 +13,10 @@ $isik->vanus=23;
 $isik->sugu="mees";
 
 
-function eesnimi_algab_vokaaliga($tüüp){
+function eesnimi_algab_vokaaliga($tÃ¼Ã¼p){
 
-    $vowels = array('A', 'E', 'I', 'O', 'U', 'Õ', 'Ä', 'Ö', 'Ü');
-    $eesnime_array=str_split((string)$tüüp->eesnimi);
+    $vowels = array('A', 'E', 'I', 'O', 'U', 'Ã•', 'Ã„', 'Ã–', 'Ãœ', 'a', 'e', 'i', 'o', 'u', 'Ãµ', 'Ã¤', 'Ã¶', 'Ã¼');
+    $eesnime_array=str_split((string)$tÃ¼Ã¼p->eesnimi);
 
     if(in_array($eesnime_array[0],$vowels)){
         return true;
@@ -20,7 +24,7 @@ function eesnimi_algab_vokaaliga($tüüp){
 
 }
 
-print_r($isik);
+echo $isik->eesnimi." ".$isik->perenimi." (".$isik->vanus.")";
 echo "<br>";
 
 if(eesnimi_algab_vokaaliga($isik)){
